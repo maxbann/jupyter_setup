@@ -15,6 +15,13 @@ apt-get install -y build-essential gcc zip default-jre
 apt-get install -y poppler-utils  # pdf file conversion
 apt-get upgrade -y bash  # upgrades bash if necessary
 
+# java upgrade to 1.8
+sudo apt-get install -y software-properties-common
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
+
 printf "Cleaning up package index cache.\n\n"
 apt-get clean  # cleans up the package index cache
 
